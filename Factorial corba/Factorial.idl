@@ -1,0 +1,5 @@
+module FactorialApp {
+    interface Factorial {
+        double factorial(in double n);
+    };
+};

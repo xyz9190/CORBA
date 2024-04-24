@@ -1,0 +1,74 @@
+
+
+
+(base) itl1@itl1-OptiPlex-390:~/Desktop/Sameer/Corba$ idlj -fall Addition.idl
+(base) itl1@itl1-OptiPlex-390:~/Desktop/Sameer/Corba$ javac *.java AdditionApp/*.java
+Note: AdditionApp/AdditionPOA.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+(base) itl1@itl1-OptiPlex-390:~/Desktop/Sameer/Corba$ orbd -ORBInitialPort 1050&[1] 4123
+(base) itl1@itl1-OptiPlex-390:~/Desktop/Sameer/Corba$ java StartServer -ORBInitialPort 1050 -ORBInitialHost localhost&
+[2] 4148
+(base) itl1@itl1-OptiPlex-390:~/Desktop/Sameer/Corba$ Calculator Server is ready and waiting ...
+
+
+
+(base) itl1@itl1-OptiPlex-390:~/Desktop/Sameer/Corba$ java StartClient -ORBInitialPort 1050 -ORBInitialHost localhost
+
+Welcome to the Calculator system:
+Enter Your Choice 
+1 for Addition
+2 for Subtraction
+3 for Multiplication
+4 for Division
+5 for Exit
+1
+Enter a:
+10
+Enter b:
+20
+10 + 20 = 30
+Enter Your Choice 
+1 for Addition
+2 for Subtraction
+3 for Multiplication
+4 for Division
+5 for Exit
+2
+Enter a:
+10
+Enter b:
+5 
+10 - 5 = 5
+Enter Your Choice 
+1 for Addition
+2 for Subtraction
+3 for Multiplication
+4 for Division
+5 for Exit
+3
+Enter a:
+10
+Enter b:
+20
+10 * 20 = 200
+Enter Your Choice 
+1 for Addition
+2 for Subtraction
+3 for Multiplication
+4 for Division
+5 for Exit
+4
+Enter a:
+10
+Enter b:
+3
+10 / 3 = 3
+Enter Your Choice 
+1 for Addition
+2 for Subtraction
+3 for Multiplication
+4 for Division
+5 for Exit
+5
+(base) itl1@itl1-OptiPlex-390:~/Desktop/Sameer/Corba$ 
+
